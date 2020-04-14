@@ -1,24 +1,27 @@
 package com.generics;
 
+import com.generics.employee.AdidasEmployee;
+import com.generics.employee.Business;
+import com.generics.employee.Store;
+
 public class Main {
 
     public static void main(String[] args) {
-        League<Team<FootballPlayer>> footballLeague = new League<>("AFL");
-        Team<FootballPlayer> adelaideCrows = new Team<>("Adelaide Crows");
-        Team<FootballPlayer> melbourne = new Team<>("Melbourne");
-        Team<FootballPlayer> hawthorn= new Team<>("Hawthorn");
-        Team<FootballPlayer> fremantle= new Team<>("Fremantle");
+        Business<Store<AdidasEmployee>> Adidas = new Business<>("Adidas");
 
-        hawthorn.matchResult(fremantle, 1, 0);
-        hawthorn.matchResult(adelaideCrows, 3, 8);
+        Store<AdidasEmployee> george = new Store<>("George");
+        Store<AdidasEmployee> panos = new Store<>("Panos");
+        Store<AdidasEmployee> nikos = new Store<>("Nikos");
 
-        adelaideCrows.matchResult(fremantle, 2, 1);
+        george.shirtSales(15);
+        panos.shirtSales(30);
+        nikos.shirtSales(0);
 
-        footballLeague.add(adelaideCrows);
-        footballLeague.add(melbourne);
-        footballLeague.add(hawthorn);
-        footballLeague.add(fremantle);
+        Adidas.addStore(george);
+        Adidas.addStore(panos);
+        Adidas.addStore(nikos);
 
-        footballLeague.showLeagueTable();
+        Adidas.showBestBusiness();
+
     }
 }

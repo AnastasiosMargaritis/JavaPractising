@@ -22,7 +22,6 @@ public class League<T extends Team> {
 
     public void  showLeagueTable(){
         Collections.sort(league);
-        System.out.println(league.size());
         for(T t: league){
             System.out.println(t.getName() + ": " + t.ranking());
         }
