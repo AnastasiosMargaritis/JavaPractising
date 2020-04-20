@@ -1,0 +1,2 @@
+2.jpg: sadness,aggreeableness,greed,
+1.jpg: happiness,nero,
