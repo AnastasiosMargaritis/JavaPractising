@@ -36,7 +36,8 @@ public class OneSalonicaCinemas extends Threatre implements MovieTheatre {
         System.out.println(super.getName());
         System.out.println("-----------------------");
         for(int i = 0; i < super.getRooms().size(); i++){
-            System.out.println("Room " + super.getRooms().get(i).getId().toString());
+            System.out.println("Room " + super.getRooms().get(i).getId().toString() + " "
+                    + super.getRooms().get(i).GetMovie());
         }
 
         System.out.println("=======================");

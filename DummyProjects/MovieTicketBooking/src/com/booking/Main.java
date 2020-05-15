@@ -4,6 +4,7 @@ import com.booking.cinemas.MovieTheatre;
 import com.booking.cinemas.OneSalonicaCinemas;
 import com.booking.cinemas.SterCinemas;
 import com.booking.cinemas.VillageCinemas;
+import com.booking.cinemas.movies.Movies;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +21,6 @@ public class Main {
         movieTheatre.get(0).printRooms();
         movieTheatre.get(1).printRooms();
         movieTheatre.get(2).printRooms();
-
-
 
     }
 }

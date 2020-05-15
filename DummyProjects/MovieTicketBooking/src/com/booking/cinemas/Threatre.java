@@ -23,7 +23,7 @@ public class Threatre {
         this.rooms.add(new Room(id, capacity, size));
 
         Random random = new Random();
-        this.rooms.get(id).setMovieToRoom(Movies.movies.get(random.nextInt(7)));
+        this.rooms.get(id - 1).setMovieToRoom(Movies.movies.get(random.nextInt(7)));
     }
 
 
