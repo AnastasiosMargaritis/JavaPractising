@@ -33,14 +33,12 @@ public class SterCinemas extends Threatre implements MovieTheatre {
     }
 
     @Override
-    public void printRooms() {
-        System.out.println(super.getName());
-        System.out.println("-----------------------");
-        for(int i = 0; i < super.getRooms().size(); i++){
-            System.out.println("Room " + super.getRooms().get(i).getId().toString() + " "
-                    + super.getRooms().get(i).GetMovie());
-        }
+    public List<Room> getRooms() {
+        return super.getRooms();
+    }
 
-        System.out.println("=======================");
+    @Override
+    public void printName() {
+        System.out.println(super.getName());
     }
 }

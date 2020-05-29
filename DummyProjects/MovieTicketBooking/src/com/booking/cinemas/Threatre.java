@@ -3,6 +3,7 @@ package com.booking.cinemas;
 import com.booking.cinemas.movies.Movies;
 import com.booking.cinemas.rooms.Room;
 import com.booking.cinemas.rooms.Size;
+import com.booking.cinemas.rooms.seats.Seat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +27,6 @@ public class Threatre {
         this.rooms.get(id - 1).setMovieToRoom(Movies.movies.get(random.nextInt(7)));
     }
 
-
-
     public List<Room> getRooms(){
         return this.rooms;
     }
@@ -39,4 +38,9 @@ public class Threatre {
     public Integer getNumberOfRooms() {
         return numberOfRooms;
     }
+
+    public List<Seat> getRoomSeats(int index){
+        return this.rooms.get(index).getSeats();
+    }
+
 }

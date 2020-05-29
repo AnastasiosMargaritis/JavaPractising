@@ -1,7 +1,9 @@
 package com.booking.cinemas;
 
+import com.booking.cinemas.rooms.Room;
 import com.booking.cinemas.rooms.Size;
 
+import java.util.List;
 import java.util.Random;
 
 public class VillageCinemas extends Threatre implements MovieTheatre {
@@ -30,17 +32,12 @@ public class VillageCinemas extends Threatre implements MovieTheatre {
     }
 
     @Override
-    public void printRooms() {
-        System.out.println(super.getName());
-        System.out.println("-----------------------");
-        for(int i = 0; i < super.getRooms().size(); i++){
-            System.out.println("Room " + super.getRooms().get(i).getId().toString() + " "
-                    + super.getRooms().get(i).GetMovie());
-        }
-
-        System.out.println("=======================");
+    public List<Room> getRooms() {
+        return super.getRooms();
     }
 
-
-
+    @Override
+    public void printName() {
+        System.out.println(super.getName());
+    }
 }

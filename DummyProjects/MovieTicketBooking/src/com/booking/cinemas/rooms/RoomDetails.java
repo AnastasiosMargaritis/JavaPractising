@@ -16,4 +16,11 @@ public class RoomDetails {
         return id;
     }
 
+    public Size getSize(){
+        return this.size;
+    }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
 }
