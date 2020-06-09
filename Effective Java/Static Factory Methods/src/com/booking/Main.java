@@ -27,5 +27,6 @@ public class Main {
 
         System.out.println(citizen.getEmail());
         System.out.println(doctor.getSpeciality().toString());
+        System.out.println(doctor);
     }
 }

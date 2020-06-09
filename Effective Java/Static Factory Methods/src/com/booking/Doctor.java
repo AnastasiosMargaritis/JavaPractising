@@ -49,4 +49,9 @@ public class Doctor extends User {
     public String getTelephone() {
         return telephone;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + this.speciality.toString();
+    }
 }
