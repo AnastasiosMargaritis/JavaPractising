@@ -21,6 +21,8 @@ public class Main {
         dog.bark(true, 3);
         dog.bark(3, true);
 
-
+        System.out.println(20 + 20 + "eBay");
+        System.out.println("eBay" + 20 + 20 );
+        
     }
 }
