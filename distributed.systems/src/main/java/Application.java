@@ -29,7 +29,7 @@ public class Application implements Watcher {
         application.run();
         application.close();
         System.out.println("Disconnected from Zookeeper, exiting application");
-    }
+    }nhsw
 
     public ZooKeeper connectToZookeeper() throws IOException {
         this.zooKeeper = new ZooKeeper(ZOOKEEPER_ADDRESS, SESSION_TIMEOUT, this);
