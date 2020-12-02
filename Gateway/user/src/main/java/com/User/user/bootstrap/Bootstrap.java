@@ -2,7 +2,6 @@ package com.User.user.bootstrap;
 
 import com.User.user.domain.User;
 import com.User.user.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
